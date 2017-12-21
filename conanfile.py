@@ -3,60 +3,60 @@ from conans import ConanFile
 
 class BoostLevel11GroupConan(ConanFile):
     name = "Boost.Level11Group"
-    version = "1.65.1"
+    version = "1.66.0"
 
     options = {"shared": [True, False], "use_icu": [True, False]}
     default_options = "shared=False", "use_icu=False"
 
     requires = \
-        "Boost.Algorithm/1.65.1@bincrafters/testing", \
-        "Boost.Array/1.65.1@bincrafters/testing", \
-        "Boost.Assert/1.65.1@bincrafters/testing", \
-        "Boost.Atomic/1.65.1@bincrafters/testing", \
-        "Boost.Bind/1.65.1@bincrafters/testing", \
-        "Boost.Chrono/1.65.1@bincrafters/testing", \
-        "Boost.Concept_Check/1.65.1@bincrafters/testing", \
-        "Boost.Config/1.65.1@bincrafters/testing", \
-        "Boost.Container/1.65.1@bincrafters/testing", \
-        "Boost.Core/1.65.1@bincrafters/testing", \
-        "Boost.Detail/1.65.1@bincrafters/testing", \
-        "Boost.Endian/1.65.1@bincrafters/testing", \
-        "Boost.Exception/1.65.1@bincrafters/testing", \
-        "Boost.Filesystem/1.65.1@bincrafters/testing", \
-        "Boost.Foreach/1.65.1@bincrafters/testing", \
-        "Boost.Function/1.65.1@bincrafters/testing", \
-        "Boost.Function_Types/1.65.1@bincrafters/testing", \
-        "Boost.Functional/1.65.1@bincrafters/testing", \
-        "Boost.Fusion/1.65.1@bincrafters/testing", \
-        "Boost.Integer/1.65.1@bincrafters/testing", \
-        "Boost.Intrusive/1.65.1@bincrafters/testing", \
-        "Boost.Io/1.65.1@bincrafters/testing", \
-        "Boost.Iostreams/1.65.1@bincrafters/testing", \
-        "Boost.Iterator/1.65.1@bincrafters/testing", \
-        "Boost.Lexical_Cast/1.65.1@bincrafters/testing", \
-        "Boost.Math/1.65.1@bincrafters/testing", \
-        "Boost.Move/1.65.1@bincrafters/testing", \
-        "Boost.Mpl/1.65.1@bincrafters/testing", \
-        "Boost.Optional/1.65.1@bincrafters/testing", \
-        "Boost.Phoenix/1.65.1@bincrafters/testing", \
-        "Boost.Predef/1.65.1@bincrafters/testing", \
-        "Boost.Preprocessor/1.65.1@bincrafters/testing", \
-        "Boost.Proto/1.65.1@bincrafters/testing", \
-        "Boost.Range/1.65.1@bincrafters/testing", \
-        "Boost.Regex/1.65.1@bincrafters/testing", \
-        "Boost.Smart_Ptr/1.65.1@bincrafters/testing", \
-        "Boost.Static_Assert/1.65.1@bincrafters/testing", \
-        "Boost.System/1.65.1@bincrafters/testing", \
-        "Boost.Throw_Exception/1.65.1@bincrafters/testing", \
-        "Boost.Tokenizer/1.65.1@bincrafters/testing", \
-        "Boost.Tti/1.65.1@bincrafters/testing", \
-        "Boost.Tuple/1.65.1@bincrafters/testing", \
-        "Boost.Type_Traits/1.65.1@bincrafters/testing", \
-        "Boost.Typeof/1.65.1@bincrafters/testing", \
-        "Boost.Unordered/1.65.1@bincrafters/testing", \
-        "Boost.Utility/1.65.1@bincrafters/testing", \
-        "Boost.Variant/1.65.1@bincrafters/testing", \
-        "Boost.Winapi/1.65.1@bincrafters/testing"
+        "Boost.Algorithm/1.66.0@bincrafters/testing", \
+        "Boost.Array/1.66.0@bincrafters/testing", \
+        "Boost.Assert/1.66.0@bincrafters/testing", \
+        "Boost.Atomic/1.66.0@bincrafters/testing", \
+        "Boost.Bind/1.66.0@bincrafters/testing", \
+        "Boost.Chrono/1.66.0@bincrafters/testing", \
+        "Boost.Concept_Check/1.66.0@bincrafters/testing", \
+        "Boost.Config/1.66.0@bincrafters/testing", \
+        "Boost.Container/1.66.0@bincrafters/testing", \
+        "Boost.Core/1.66.0@bincrafters/testing", \
+        "Boost.Detail/1.66.0@bincrafters/testing", \
+        "Boost.Endian/1.66.0@bincrafters/testing", \
+        "Boost.Exception/1.66.0@bincrafters/testing", \
+        "Boost.Filesystem/1.66.0@bincrafters/testing", \
+        "Boost.Foreach/1.66.0@bincrafters/testing", \
+        "Boost.Function/1.66.0@bincrafters/testing", \
+        "Boost.Function_Types/1.66.0@bincrafters/testing", \
+        "Boost.Functional/1.66.0@bincrafters/testing", \
+        "Boost.Fusion/1.66.0@bincrafters/testing", \
+        "Boost.Integer/1.66.0@bincrafters/testing", \
+        "Boost.Intrusive/1.66.0@bincrafters/testing", \
+        "Boost.Io/1.66.0@bincrafters/testing", \
+        "Boost.Iostreams/1.66.0@bincrafters/testing", \
+        "Boost.Iterator/1.66.0@bincrafters/testing", \
+        "Boost.Lexical_Cast/1.66.0@bincrafters/testing", \
+        "Boost.Math/1.66.0@bincrafters/testing", \
+        "Boost.Move/1.66.0@bincrafters/testing", \
+        "Boost.Mpl/1.66.0@bincrafters/testing", \
+        "Boost.Optional/1.66.0@bincrafters/testing", \
+        "Boost.Phoenix/1.66.0@bincrafters/testing", \
+        "Boost.Predef/1.66.0@bincrafters/testing", \
+        "Boost.Preprocessor/1.66.0@bincrafters/testing", \
+        "Boost.Proto/1.66.0@bincrafters/testing", \
+        "Boost.Range/1.66.0@bincrafters/testing", \
+        "Boost.Regex/1.66.0@bincrafters/testing", \
+        "Boost.Smart_Ptr/1.66.0@bincrafters/testing", \
+        "Boost.Static_Assert/1.66.0@bincrafters/testing", \
+        "Boost.System/1.66.0@bincrafters/testing", \
+        "Boost.Throw_Exception/1.66.0@bincrafters/testing", \
+        "Boost.Tokenizer/1.66.0@bincrafters/testing", \
+        "Boost.Tti/1.66.0@bincrafters/testing", \
+        "Boost.Tuple/1.66.0@bincrafters/testing", \
+        "Boost.Type_Traits/1.66.0@bincrafters/testing", \
+        "Boost.Typeof/1.66.0@bincrafters/testing", \
+        "Boost.Unordered/1.66.0@bincrafters/testing", \
+        "Boost.Utility/1.66.0@bincrafters/testing", \
+        "Boost.Variant/1.66.0@bincrafters/testing", \
+        "Boost.Winapi/1.66.0@bincrafters/testing"
 
     lib_short_names = [
         "date_time", "locale", "pool", "serialization", "spirit", "thread"]
@@ -91,9 +91,9 @@ class BoostLevel11GroupConan(ConanFile):
     # BEGIN
 
     url = "https://github.com/bincrafters/conan-boost-level11group"
-    description = "Please visit http://www.boost.org/doc/libs/1_65_1"
+    description = "Please visit http://www.boost.org/doc/libs/1_66_0"
     license = "www.boost.org/users/license.html"
-    build_requires = "Boost.Generator/1.65.1@bincrafters/testing"
+    build_requires = "Boost.Generator/1.66.0@bincrafters/testing"
     short_paths = True
     generators = "boost"
     settings = "os", "arch", "compiler", "build_type"

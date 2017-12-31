@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostLevel11GroupConan(ConanFile):
     name = "boost_level11group"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-level11group"
+    url = "https://github.com/bincrafters/conan-boost_level11group"
 
     lib_short_names = [
         "date_time", "locale", "pool", "serialization", "spirit", "thread"]

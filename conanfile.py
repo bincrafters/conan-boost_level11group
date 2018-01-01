@@ -87,7 +87,7 @@ class BoostLevel11GroupConan(ConanFile):
         else:
             return " boost.locale.icu=off"
 
-    def package_info_after(self):
+    def package_info_additional(self):
         if self.options.use_icu:
             self.cpp_info.defines.append("BOOST_LOCALE_WITH_ICU=1")
         elif self.settings.os == "Macos":

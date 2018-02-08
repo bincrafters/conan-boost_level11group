@@ -10,10 +10,10 @@ class BoostLevel11GroupConan(ConanFile):
     url = "https://github.com/bincrafters/conan-boost_level11group"
     author = "Bincrafters <bincrafters@gmail.com>"
     exports = ["LICENSE.md"]
+    level_group = "boost_level11group"
     lib_short_names = [
         "date_time", "locale", "pool", "serialization", "spirit", "thread"]
         
-    is_cycle_group = True
     is_header_only = {
         "date_time":False,
         "locale":False,

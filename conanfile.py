@@ -5,94 +5,79 @@ from conans import ConanFile, tools
 
 
 class BoostLevel11GroupConan(ConanFile):
+    # This is now Level 15
     name = "boost_level11group"
-    version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost_level11group"
+    version = "1.67.0"
     author = "Bincrafters <bincrafters@gmail.com>"
     exports = ["LICENSE.md"]
     is_cycle_group = True
     lib_short_names = [
-        "date_time", "locale", "pool", "serialization", "spirit", "thread"]
-        
+        "date_time", "pool", "serialization", "spirit", "thread"]
+
     is_header_only = {
         "date_time":False,
-        "locale":False,
         "pool":True,
         "serialization":False,
         "spirit":True,
         "thread":False }
-        
-    options = {"shared": [True, False], "use_icu": [True, False]}
-    default_options = "shared=False", "use_icu=False"
+
+    options = {"shared": [True, False]}
+    default_options = "shared=False"
 
     requires = (
-        "boost_package_tools/1.66.0@bincrafters/testing",
-        "boost_algorithm/1.66.0@bincrafters/testing",
-        "boost_array/1.66.0@bincrafters/testing",
-        "boost_assert/1.66.0@bincrafters/testing",
-        "boost_atomic/1.66.0@bincrafters/testing",
-        "boost_bind/1.66.0@bincrafters/testing",
-        "boost_chrono/1.66.0@bincrafters/testing",
-        "boost_concept_check/1.66.0@bincrafters/testing",
-        "boost_config/1.66.0@bincrafters/testing",
-        "boost_container/1.66.0@bincrafters/testing",
-        "boost_core/1.66.0@bincrafters/testing",
-        "boost_detail/1.66.0@bincrafters/testing",
-        "boost_endian/1.66.0@bincrafters/testing",
-        "boost_exception/1.66.0@bincrafters/testing",
-        "boost_filesystem/1.66.0@bincrafters/testing",
-        "boost_foreach/1.66.0@bincrafters/testing",
-        "boost_function/1.66.0@bincrafters/testing",
-        "boost_function_types/1.66.0@bincrafters/testing",
-        "boost_functional/1.66.0@bincrafters/testing",
-        "boost_fusion/1.66.0@bincrafters/testing",
-        "boost_integer/1.66.0@bincrafters/testing",
-        "boost_intrusive/1.66.0@bincrafters/testing",
-        "boost_io/1.66.0@bincrafters/testing",
-        "boost_iostreams/1.66.0@bincrafters/testing",
-        "boost_iterator/1.66.0@bincrafters/testing",
-        "boost_lexical_cast/1.66.0@bincrafters/testing",
-        "boost_math/1.66.0@bincrafters/testing",
-        "boost_move/1.66.0@bincrafters/testing",
-        "boost_mpl/1.66.0@bincrafters/testing",
-        "boost_optional/1.66.0@bincrafters/testing",
-        "boost_phoenix/1.66.0@bincrafters/testing",
-        "boost_predef/1.66.0@bincrafters/testing",
-        "boost_preprocessor/1.66.0@bincrafters/testing",
-        "boost_proto/1.66.0@bincrafters/testing",
-        "boost_range/1.66.0@bincrafters/testing",
-        "boost_regex/1.66.0@bincrafters/testing",
-        "boost_smart_ptr/1.66.0@bincrafters/testing",
-        "boost_static_assert/1.66.0@bincrafters/testing",
-        "boost_system/1.66.0@bincrafters/testing",
-        "boost_throw_exception/1.66.0@bincrafters/testing",
-        "boost_tokenizer/1.66.0@bincrafters/testing",
-        "boost_tti/1.66.0@bincrafters/testing",
-        "boost_tuple/1.66.0@bincrafters/testing",
-        "boost_type_traits/1.66.0@bincrafters/testing",
-        "boost_typeof/1.66.0@bincrafters/testing",
-        "boost_unordered/1.66.0@bincrafters/testing",
-        "boost_utility/1.66.0@bincrafters/testing",
-        "boost_variant/1.66.0@bincrafters/testing",
-        "boost_winapi/1.66.0@bincrafters/testing"
+        "boost_package_tools/1.67.0@bincrafters/testing",
+        "boost_algorithm/1.67.0@bincrafters/testing",
+        "boost_array/1.67.0@bincrafters/testing",
+        "boost_assert/1.67.0@bincrafters/testing",
+        "boost_atomic/1.67.0@bincrafters/testing",
+        "boost_bind/1.67.0@bincrafters/testing",
+        "boost_chrono/1.67.0@bincrafters/testing",
+        "boost_concept_check/1.67.0@bincrafters/testing",
+        "boost_config/1.67.0@bincrafters/testing",
+        "boost_container/1.67.0@bincrafters/testing",
+        "boost_container_hash/1.67.0@bincrafters/testing",
+        "boost_core/1.67.0@bincrafters/testing",
+        "boost_detail/1.67.0@bincrafters/testing",
+        "boost_endian/1.67.0@bincrafters/testing",
+        "boost_exception/1.67.0@bincrafters/testing",
+        "boost_filesystem/1.67.0@bincrafters/testing",
+        "boost_foreach/1.67.0@bincrafters/testing",
+        "boost_function/1.67.0@bincrafters/testing",
+        "boost_function_types/1.67.0@bincrafters/testing",
+        "boost_fusion/1.67.0@bincrafters/testing",
+        "boost_integer/1.67.0@bincrafters/testing",
+        "boost_intrusive/1.67.0@bincrafters/testing",
+        "boost_io/1.67.0@bincrafters/testing",
+        "boost_iostreams/1.67.0@bincrafters/testing",
+        "boost_iterator/1.67.0@bincrafters/testing",
+        "boost_lexical_cast/1.67.0@bincrafters/testing",
+        "boost_math/1.67.0@bincrafters/testing",
+        "boost_move/1.67.0@bincrafters/testing",
+        "boost_mpl/1.67.0@bincrafters/testing",
+        "boost_numeric_conversion/1.67.0@bincrafters/testing",
+        "boost_optional/1.67.0@bincrafters/testing",
+        "boost_phoenix/1.67.0@bincrafters/testing",
+        "boost_predef/1.67.0@bincrafters/testing",
+        "boost_preprocessor/1.67.0@bincrafters/testing",
+        "boost_proto/1.67.0@bincrafters/testing",
+        "boost_range/1.67.0@bincrafters/testing",
+        "boost_regex/1.67.0@bincrafters/testing",
+        "boost_smart_ptr/1.67.0@bincrafters/testing",
+        "boost_static_assert/1.67.0@bincrafters/testing",
+        "boost_system/1.67.0@bincrafters/testing",
+        "boost_throw_exception/1.67.0@bincrafters/testing",
+        "boost_tokenizer/1.67.0@bincrafters/testing",
+        "boost_tti/1.67.0@bincrafters/testing",
+        "boost_tuple/1.67.0@bincrafters/testing",
+        "boost_type_traits/1.67.0@bincrafters/testing",
+        "boost_typeof/1.67.0@bincrafters/testing",
+        "boost_unordered/1.67.0@bincrafters/testing",
+        "boost_utility/1.67.0@bincrafters/testing",
+        "boost_variant/1.67.0@bincrafters/testing",
+        "boost_winapi/1.67.0@bincrafters/testing"
     )
 
-    def requirements(self):
-        if self.options.use_icu:
-            self.requires("icu/59.1@bincrafters/stable")
-
-    def b2_options(self, lib_name=None):
-        # pylint: disable=unused-argument
-        if self.options.use_icu:
-            return " boost.locale.iconv=off boost.locale.icu=on"
-        else:
-            return " boost.locale.icu=off"
-
     def package_info_additional(self):
-        if self.options.use_icu:
-            self.cpp_info.defines.append("BOOST_LOCALE_WITH_ICU=1")
-        elif self.settings.os == "Macos":
-            self.cpp_info.libs.append("iconv")
         if self.settings.os != "Windows":
             self.cpp_info.libs.append("pthread")
 
@@ -104,12 +89,13 @@ class BoostLevel11GroupConan(ConanFile):
 
     # BEGIN
 
-    description = "Please visit http://www.boost.org/doc/libs/1_66_0"
+    url = "https://github.com/bincrafters/conan-boost_level11group"
+    description = "Please visit http://www.boost.org/doc/libs/1_67_0"
     license = "BSL-1.0"
     short_paths = True
     generators = "boost"
     settings = "os", "arch", "compiler", "build_type"
-    build_requires = "boost_generator/1.66.0@bincrafters/testing"
+    build_requires = "boost_generator/1.67.0@bincrafters/testing"
 
     def package_id(self):
         getattr(self, "package_id_additional", lambda:None)()
@@ -137,7 +123,5 @@ class BoostLevel11GroupConan(ConanFile):
             import boost_package_tools  # pylint: disable=F0401
             boost_package_tools.package_info(self)
         getattr(self, "package_info_additional", lambda:None)()
-
-
 
     # END

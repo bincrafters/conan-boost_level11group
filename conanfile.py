@@ -9,6 +9,7 @@ base = python_requires("boost_base/1.67.0@bincrafters/testing")
 class BoostLevel11GroupConan(base.BoostBaseConan):
     # This is now Level 15
     name = "boost_level11group"
+    version = "1.67.0"
     url = "https://github.com/bincrafters/conan-boost_level11group"
     lib_short_names = ["date_time", "pool", "serialization", "spirit", "thread"]
     header_only_libs = ["pool", "spirit"]
